@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".prdlist"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:background="#00FFFFFF"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            app:title="                        mobile shop"
+            android:keyboardNavigationCluster="true"
+            android:textDirection="ltr"
+            android:textAlignment="center"
+            android:background="#00FFFFFF"
+            android:layoutDirection="ltr"
+            android:id="@+id/navToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/ProdList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

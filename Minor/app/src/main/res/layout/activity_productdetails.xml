@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    tools:context=".productdetails">
+
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgView"
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shapecon"
+            android:padding="10dp"
+            android:gravity="center"
+            android:alpha="0.7"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/s23"/>
+
+            <TextView
+                android:id="@+id/txtprdname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="s23"
+                android:textColor="#283747"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:textSize="40dp"
+                    android:textColor="#283747"></TextView>
+
+                <TextView
+                    android:id="@+id/txtprdprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#283747"
+                    android:text="0.00"
+                    android:textSize="40dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/btnMinus"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btnm"
+                    android:onClick="Minus"
+
+                    android:padding="10dp"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/txtQty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/txtv"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/btnPlus"
+                    android:onClick="Plus"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btnp"
+
+                    android:padding="10dp"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/btnAddcart"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/btns"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:onClick="placeholder"
+
+                android:padding="15dp"
+                android:text="Place Order"
+                android:layout_width="200dp"
+                android:layout_height="60dp"/>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/txtcrt"
+                    android:gravity="bottom"
+                    android:text="    More Items"
+
+                    android:textAlignment="gravity"
+                    android:textColor="#1e90ff"
+                    android:textSize="20dp"
+                    android:onClick="gohome"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

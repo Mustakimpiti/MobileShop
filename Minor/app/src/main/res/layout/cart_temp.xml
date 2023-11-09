@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:alpha="0.7"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1.5"
+                android:text="Burger"
+                android:textSize="30dp"
+                android:id="@+id/lblFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/updprice"
+                android:layout_weight="3.5"
+                android:text="150"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:weightSum="5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/lblPrice"
+                android:layout_weight="2.2"
+                android:text="150"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_weight="2.8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:id="@+id/btnMinus"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/miniplus"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:padding="2dp"
+                    android:text="-"
+                    android:layout_width="50dp"
+
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/txtQty"
+                    android:textSize="25dp"
+                    android:text="1"
+                    android:padding="2dp"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/minitxt"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:id="@+id/btnPlus"
+
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/miniminus"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:padding="2dp"
+                    android:text="+"
+                    android:layout_width="50dp"
+
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

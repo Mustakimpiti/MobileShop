@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peakpx"
+    tools:context=".Login"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="74dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="MS SHOP"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <EditText
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et"
+            android:drawableLeft="@drawable/email"
+            android:gravity="center"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="#E6D1D1"
+            android:textColorHint="#E6D1D1" />
+
+        <EditText
+            android:id="@+id/text_pass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et"
+            android:drawableLeft="@drawable/pass_24"
+            android:gravity="center"
+            android:hint="Enter Password"
+            android:inputType="numberPassword"
+            android:padding="20dp"
+
+            android:textColor="#E6D1D1"
+            android:textColorHint="#E6D1D1" />
+
+        <Button
+            android:id="@+id/btnSubmit_login"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/btn"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:text="Login"
+
+            android:textColor="#0C0C0C"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="Or"
+                android:textColor="#E6D1D1"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@android:color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/createAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Create an Account"
+
+            android:textColor="#E6D1D1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
